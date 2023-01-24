@@ -8,10 +8,10 @@ class Solution:
         complement = 0 
 
         for i in range(len(nums)):  
-            complement = target - nums[i] #c = 9 - 7 = 2
+            complement = target - nums[i]
 
             if complement in hashmap:
                 final.append(hashmap[complement])
                 final.append(i)
                 return final
-            hashmap[nums[i]] = i #{2:0}
+            hashmap[nums[i]] = i
